@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h5 {
+    @apply absolute px-6 duration-200 bottom-4 md:bottom-8 md:px-10;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-10 py-2 font-bold uppercase border-2 tracking-widest border-black font-alata hover:bg-black hover:text-white;
+  }
+  .item-container {
+    @apply flex flex-col justify-between space-y-6 text-2xl text-white uppercase md:flex-row md:space-x-8 md:space-y-0;
+  }
+
+  .item {
+    @apply relative overflow-hidden md:w-1/4;
+  }
+}
+
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;

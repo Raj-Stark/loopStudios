@@ -15,49 +15,317 @@
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
-    <!-- Hero Section  -->
     <section id="hero">
-      <!-- Hero Container -->
-      <div class="container max-w-6xl mx-auto px-6 py-12">
-        <nav class="flex items-center justify-between font-bold text-white">
+      <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
+        <nav class="flex flex-row justify-between font-bold text-white">
           <img src="images/logo.svg" alt="" />
-          <!-- Menu -->
-          <div class="hidden h-10 font-alata md:flex md:space-x-8">
+          <div class="hidden font-alata md:flex md:space-x-8">
             <div class="group">
               <a href="#">About</a>
               <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-100"
+                class="mx-2 group-hover:border-b group-hover:border-blue-700"
               ></div>
             </div>
             <div class="group">
-              <a href="#">Careers</a>
+              <a href="#">Carriers</a>
               <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-100"
-              ></div>
-            </div>
-            <div class="Product">
-              <a href="#">About</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-100"
+                class="mx-2 group-hover:border-b group-hover:border-blue-700"
               ></div>
             </div>
             <div class="group">
-              <a href="#">Support</a>
+              <a href="#">Events</a>
               <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-100"
+                class="mx-2 group-hover:border-b group-hover:border-blue-700"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Products</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-700"
               ></div>
             </div>
           </div>
         </nav>
-        <!-- Menu /Logo Container -->
+
         <div
-          class="max-w-lg mt-32 mb-32 p-4 mx-auto font-sans text-4xl text-white uppercase border-2 md:p-10 md:text-6xl md:mx-0 md:max-w-2xl"
+          class="md:max-w-2xl p-4 mt-32 mb-32 font-sans text-4xl text-white uppercase md:p-10 md:text-6xl"
         >
-          Impressive Experience That Deliver
+          Impressive Experiences That Deliver
         </div>
       </div>
     </section>
 
-    <!-- Feature Section  -->
+    <section id="feature">
+      <div
+        class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
+      >
+        <img src="images/desktop//image-interactive.jpg" alt="" />
+
+        <!-- Text Container -->
+
+        <div
+          class="bg-white md:absolute md:right-0 md:py-20 md:pl-20 md:bottom-0"
+        >
+          <h2
+            class="text-center mt-6 mb-6 max-w-lg font-sans text-4xl text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left"
+          >
+            The Leader In Interactive VR
+          </h2>
+
+          <p class="max-w-md text-center md:text-left">
+            Founded in 2011,Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Creations section -->
+
+    <section id="creations">
+      <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900">
+        <!-- Header  -->
+        <div class="flex justify-center mb-20 md:justify-between">
+          <h2 class="text-4xl text-center uppercase md:text-5xl">
+            Our Creations
+          </h2>
+          <button
+            class="hidden px-10 py-2 md:block tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white font-alata"
+          >
+            See All
+          </button>
+        </div>
+
+        <!-- Items Container -->
+        <div class="item-container">
+          <!-- Item -1  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-deep-earth.jpg"
+              alt=""
+              class="md:hidden w-full"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+
+          <!-- Item -2  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-curiosity.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-curiosity.jpg"
+              alt=""
+              class="md:hidden w-full"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+          <!--  ! Item -3  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-fisheye.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-fisheye.jpg"
+              alt=""
+              class="md:hidden w-full"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+          <!-- ! Item -4  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-from-above.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-from-above.jpg"
+              alt=""
+              class="md:hidden w-full"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+        </div>
+
+        <!-- ! 2nd Item Container -->
+
+        <div class="item-container mt-10">
+          <!-- Item -1  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-night-arcade.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-night-arcade.jpg"
+              alt=""
+              class="md:hidden w-full group-hover:scale-110"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+
+          <!-- Item -2  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt=""
+              class="md:hidden w-full group-hover:scale-110"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+          <!--  ! Item -3  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-grid.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-grid.jpg"
+              alt=""
+              class="md:hidden w-full group-hover:scale-110"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+          <!-- ! Item -4  -->
+          <div class="group item">
+            <!-- Image Desktop -->
+            <img
+              src="images/desktop/image-soccer-team.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+
+            <!-- Image Mobile -->
+
+            <img
+              src="images/mobile/image-soccer-team.jpg"
+              alt=""
+              class="md:hidden w-full group-hover:scale-110"
+            />
+            <!-- Item Text -->
+            <h5 class="group-hover:scale-110">Deep Earth</h5>
+          </div>
+        </div>
+        <!-- Bottom Button Container -->
+        <div class="flex justify-center mt-10 md:hidden">
+          <button class="btn w-full md:hidden">See All</button>
+        </div>
+      </div>
+    </section>
+    <!-- ! Footer  -->
+
+    <footer class="bg-black">
+      <div class="container max-w-6xl py-10 mx-auto">
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:justify-between md:items-start"
+        >
+          <!-- ! Menu & Logo Container -->
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
+            <!-- Logo -->
+            <div class="h-8">
+              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+            </div>
+            <!-- Menu -->
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3"
+            >
+              <!-- Item 1 -->
+              <div class="h-10 group">
+                <a href="#">About</a>
+                <div
+                  class="group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 2 -->
+              <div class="h-10 group">
+                <a href="#">Carriers</a>
+                <div
+                  class="group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 3 -->
+              <div class="h-10 group">
+                <a href="#">Events</a>
+                <div
+                  class="group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 4 -->
+              <div class="h-10 group">
+                <a href="#">Product</a>
+                <div
+                  class="group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- Item 5 -->
+              <div class="h-10 group">
+                <a href="#">Support</a>
+                <div
+                  class="group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ! Social & Copy -->
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
